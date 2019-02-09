@@ -26,6 +26,29 @@ height: 40em;
 }
 
 
+
+.def{
+    height: 10em;
+    background-color:#CCCBCB;
+    border-radius: 1em;
+    width:10em;
+    margin-left: 5em;
+
+}
+
+
 #test{
-margin-left: -1em;
+    margin-top: -2em;
+    margin-left: -1em;
+
+}
+
+
+#test1{
+    margin-top: 5em;
+}
+
+
+#test2{
+    margin-top: 20em;
 }
