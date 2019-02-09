@@ -1,0 +1,31 @@
+.img-circle 
+{
+    display: inline-block;
+    position: relative;
+    width: 350px;
+    height: 350px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.abc1 {
+margin: 1rem;
+padding: 2rem;
+background-color:#CCCBCB;
+border-radius: 1em;
+height: 20em;
+}
+
+
+.abc {
+margin: 1rem;
+padding: 2rem;
+background-color:#CCCBCB;
+border-radius: 1em;
+height: 40em;
+}
+
+
+#test{
+margin-left: -1em;
+}
