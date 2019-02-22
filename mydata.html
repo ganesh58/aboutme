@@ -1,16 +1,20 @@
 <html>
 
 <head>
-                <link rel="stylesheet" href="./style.css">
+        <link rel="stylesheet" href="./style.css">
 
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+                integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
                 crossorigin="anonymous">
         <link rel="stylesheet" href="./style1.css">
-        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+                integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
                 crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+                integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
                 crossorigin="anonymous"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+                integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
                 crossorigin="anonymous"></script>
 </head>
 
@@ -25,9 +29,11 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                         <div class="navbar-nav">
-                                <a class="nav-item nav-link active" href="./index.html">Home<span class="sr-only">(current)</span></a>
+                                <a class="nav-item nav-link active" href="./index.html">Home<span
+                                                class="sr-only">(current)</span></a>
                                 <a class="nav-item nav-link" href="./contact.html">Contact</a>
                                 <a class="nav-item nav-link" href="./mydata.html">My Content</a>
+                                <a class="nav-item nav-link" href="./qunit.html">qunit Testing</a>
                         </div>
                 </div>
 
@@ -44,41 +50,78 @@
         <div class="container">
 
                 <div id='calc-contain'>
+                        <label>enter length</label><input type="text" value="" name="length" id="length">
+                        <label>enter breadth</label><input type="text" value="" name="breadth" id="breadth">
+                        <br>
 
-                        <form name="calculator">
+                        <!-- <button id="mybutton" name="clickbutton">Click me</button> -->
 
-                                <input type="text" name="answer" />
-                                <br>
-
-                                <input type="button" value=" 1 " onclick="calculator.answer.value += '1'" />
-                                <input type="button" value=" 2 " onclick="calculator.answer.value += '2'" />
-                                <input type="button" value=" 3 " onclick="calculator.answer.value += '3'" />
-                                <input type="button" value=" + " onclick="calculator.answer.value += '+'" />
-                                <br />
-
-                                <input type="button" value=" 4 " onclick="calculator.answer.value += '4'" />
-                                <input type="button" value=" 5 " onclick="calculator.answer.value += '5'" />
-                                <input type="button" value=" 6 " onclick="calculator.answer.value += '6'" />
-                                <input type="button" value=" - " onclick="calculator.answer.value += '-'" />
-                                </br>
-
-                                <input type="button" value=" 7 " onclick="calculator.answer.value += '7'" />
-                                <input type="button" value=" 8 " onclick="calculator.answer.value += '8'" />
-                                <input type="button" value=" 9 " onclick="calculator.answer.value += '9'" />
-                                <input type="button" value=" x " onclick="calculator.answer.value += '*'" />
-                                </br>
-
-                                <input type="button" value=" c " onclick="calculator.answer.value = ''" />
-                                <input type="button" value=" 0 " onclick="calculator.answer.value += '0'" />
-                                <input type="button" value=" = " onclick="calculator.answer.value = eval(calculator.answer.value)" />
-                                <input type="button" value=" / " onclick="calculator.answer.value += '/'" />
-                                </br>
+                        <!-- <input type="number" id="textresult" name="num3"> -->
 
 
-                        </form>
-                        <div id="agh">
-                                <p>Ganesh calculator
-                        </div>
+
+                        <button id="clicker" class="btn btn-primary">Click me!</button>
+                        <button id="wiper" class="btn btn-danger">Clear Storage</button>
+                        <p id="result"></p>
+
+
+
+
+                        <script>
+
+                                // document.getElementById("mybutton").addEventListener("click", function()
+                                // {
+                                //         var  one = document.getElementById('length').value;
+                                //         var  two = document.getElementById('breadth').value;
+                                //         var result = one * two;
+                                //         document.getElementById("textresult").value= result;
+                                // });
+
+
+                                console.log('SCRIPT START')
+                                console.log('Declare event listeners .......................')
+
+                                window.addEventListener('load', (event) => {
+                                        console.log('  Starting initialization ')
+                                        if (localStorage.getItem('number1')) {
+                                                document.getElementById('length').value = parseInt(localStorage.number1)
+                                                console.log(`  Stored num1 = ${localStorage.number1}`)
+                                        }
+                                        if (localStorage.getItem('number2')) {
+                                                document.getElementById('breadth').value = parseInt(localStorage.number2)
+                                                console.log(`  Stored num2 = ${localStorage.number2}`)
+                                        }
+                                        console.log('  Finished initialization')
+                                })
+
+                                document.getElementById('clicker').addEventListener('click', () => {
+                                        console.log('  Starting clicker click handler')
+                                        const origCount = parseInt(localStorage.getItem('countOfClicks')) || 0
+                                        const i = parseInt(document.getElementById('length').value)
+                                        console.log('i=' + i)
+                                        const j = parseInt(document.getElementById('breadth').value)
+                                        console.log('j=' + j)
+                                        const ct = origCount + 1
+                                        const ans = 'your area is ' + i * j * 0.5 + '. This has been run ' + ct + ' times.'
+                                        document.getElementById('result').innerHTML = ans
+                                        localStorage.setItem('countOfClicks', ct)  // define a string key to store + its value
+                                        localStorage.setItem('number1', i)
+                                        localStorage.setItem('number2', j)
+                                        console.log('  Finished clicker click handler')
+                                })
+
+                                document.getElementById('wiper').addEventListener('click', () => {
+                                        console.log('  Starting wiper click handler')
+                                        localStorage.removeItem('countOfClicks')
+                                        localStorage.removeItem('number1')
+                                        localStorage.removeItem('number2')
+                                        console.log('  Finished wiper click handler - localStorage entries removed')
+                                })
+
+                                console.log('SCRIPT END')
+                        </script>
+
+
                 </div>
 
         </div>
